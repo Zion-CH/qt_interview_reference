@@ -6,11 +6,11 @@
 
 ②监听list需要的参数是地址和端口号
 
-③当有新的客户端连接成功回发送newConnect信号
+③当有新的客户端连接成功回发送newConnection信号
 
 ④在newConnection信号槽函数中，调用nextPendingConnection函数获取新连接QTcpSocket对象
 
-⑤连接QTcpSocket对象的readRead信号
+⑤连接QTcpSocket对象的readyRead信号
 
 ⑥在readRead信号的槽函数使用read接收数据
 
